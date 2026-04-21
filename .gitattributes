@@ -1,0 +1,6 @@
+# Force LF on anything Docker/Linux will execute — CRLF line endings break
+# shebangs and cause `#!/usr/bin/env bash\r: no such file or directory` errors.
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.conf text eol=lf
+*.template text eol=lf
